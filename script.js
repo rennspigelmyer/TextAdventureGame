@@ -2,40 +2,40 @@ console.log("JS is connected");
 
 
 // Text Adventure Game
-const enter = "Please enter 1 or 2 for your answer";
-const gameOver = "Sorry GAME OVER!";
-const start = `Welcome to the Ghostbusters Text Adventure Game. Click 'OK' to start the game.`;
-const q1 = `You are trying to catch a ghost called "Slimer" at the Sedgwick Hotel but have not seen him yet. Should you...
-1. Take the elevator to look on the 12th floor
+const enter = "Select 1 or 2 for your answer";
+const gameOver = "Ope! Doc gave you Prazosin. No more nightmare adventures for you! Refresh page to go back to sleep.";
+const start = `Click 'SLEEP' to start the game. (Fine... click "OK")`;
+const q1 = `You are are in a bathroom, hugging a girl with long hair & grey skin. When you see her face she is...
+1. Smiling at you, and you feel something sharp & cold on your back.
 OR
-2. Wait in the lobby to see if he shows up there
+2. Smiling at you, asking where the bathroom is.
 ${enter}`;
-const gameOver1 = `You never see Slimer so you give up on catching ghosts and become a talk show host instead. ${gameOver}`;
-const q2 = `When you get off the elevator something startles you! Should you...
-1. Look to see what it is
+const gameOver1 = `Oh no! ${gameOver}`;
+const q2 = `You manage to break away from the girl in the bathroom, there's chaos and you're running, when you get to the end....
+1. The room around you is completely empty, & you hear a man saying "corpse... corpse... corpse.."
 OR
-2. Shoot at it immediately with your proton pack
+2. A man is standing in front of you, with a mask over his face, with giant red eyes. Holding a human heart, & says... "I did what I had to do".
 ${enter}`;
-const gameOver2 = `It was the hotel maid and you nearly killed her! You are forced to leave the hotel. ${gameOver}`;
-const q3 = `It was just the hotel maid. So you walk around to look for Slimer and You Spot Him! Should you...
-1. Call to let the other Ghostbusters know you found him
+const gameOver2 = `Close. The choice you chose was inspired by another one of my nightmares. ${gameOver}`;
+const q3 = `You've woken up, and see a super attractive person, trying to seduce you... 
+1. Realize you are in a prison cell and are very confused.
 OR
-2. Hide and wait to see where he goes
+2. Watch them turn into an evil creature that has you held captive.
 ${enter}`;
-const gameOver3 = `Slimer hears you, immediately flies at you, and YOU GET SLIMED! ${gameOver}`;
-const q4 = `You see that Slimer goes into the ballroom so you quickly tell the other Ghostbusters and you all head in. You see him flying around when you walk in. Should you...
-1. Shoot at him with your proton pack
+const gameOver3 = `So close. ${gameOver}`;
+const q4 = `You look around desperately trying to find someone or something familiar & then...
+1. Something makes you realize you're dreaming
 OR
-2. Put two proton packs together to try and create a more powerful shot (A.K.A. Cross The Streams)
+2. You see yourself drowning in a pool across the room from you...
 ${enter}`;
-const gameOver4 = `All life as you know it stops instantaneously and every molecule in your body explodes at the speed of light. ${gameOver}`;
-const q5 = `You wrangled Slimer with your shot and the ghost trap is set underneath him. You noticed there is a bright light coming from the trap and are tempted to look at it. Should you...
-1. Look at the trap
+const gameOver4 = `You woke yourself & ${gameOver}`;
+const q5 = `After you realized you are dreaming...
+1. you look over at the dark entity, raise your hand without touching them, make them bow down & curl into a ball. Then wake up feeling empowered.
 OR
-2. Keep your focus on Slimer
+2. You say "I'm dreaming. Watch, I can make you melt." & the entity has melted. Then you wake up confused.
 ${enter}`;
-const gameOver5 = `You looked at the trap and the light BLINDED YOU! ${gameOver}`;
-const win = `The ghost trap sucked Slimer in and closed. CONGRATULATIONS! YOU CAUGHT SLIMER!!!`;
+const gameOver5 = `So close. ${gameOver}`;
+const win = `You have successfully gone through the nightmare! Congrats! Now you get Prazosin too.`;
 
 
 // Alerts the user to start the game
@@ -56,7 +56,7 @@ if (userInput == 1) {
       userInput = prompt(q3);
   
       // 3rd Conditional Statement
-      if (userInput == 2) {
+      if (userInput == 1) {
         userInput = prompt(q4);
   
         // 4th Conditional Statement
@@ -64,7 +64,7 @@ if (userInput == 1) {
           userInput = prompt(q5);
   
           // 5th Conditional Statement
-          if (userInput == 2) {
+          if (userInput == 1) {
               alert(win);
           } else {
               alert(gameOver5);
